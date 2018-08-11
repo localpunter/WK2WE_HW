@@ -21,6 +21,8 @@ class RoomTest < MiniTest::Test
     @guest2 = Guest.new("Ian Black", 500)
     @guest3 = Guest.new("Ian Smith", 500)
 
+    @guests = [@guest1, @guest2, @guest3]
+
     @room1 = Room.new(@songs, [@guest1, @guest2, @guest3], 100)
     # binding.pry
   end
@@ -32,6 +34,11 @@ class RoomTest < MiniTest::Test
   def test_room_has_songs
     assert_equal("Waterfall", @song4.name)
   end
+
+  
+
+
+  # , @guest4, @guest5, @guest6
 
   # def test_pub_has_drinks
   #   assert_equal(5, @bar_1.drinks.count)

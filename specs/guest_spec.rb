@@ -22,9 +22,9 @@ class CustomerTest < MiniTest::Test
     assert_equal("Ian Brown", @guest1.name)
   end
 
-  # def test_guest_wallet_value
-  #   assert_equal(500, @guest1.wallet)
-  # end
+  def test_guest_wallet_value
+    assert_equal(500, @guest1.wallet)
+  end
   #
   # def test_guest_can_play_song
   #   @customer1.buy_drink(@bar_1, @orange_drink)
