@@ -5,7 +5,7 @@ attr_accessor :rm_avail
 
   def initialize(room, rm_avail)
     @room = room
-    @price = price
+
 
   end
 

@@ -22,21 +22,21 @@ class RoomTest < MiniTest::Test
     @guest3 = Guest.new("Ian Smith", 500)
 
     @room1 = Room.new(@songs, [@guest1, @guest2, @guest3], 100)
-    binding.pry
+    # binding.pry
   end
 
   def test_room_has_guest
-    assert_equal("Ian Brown", @guest2.name)
+    assert_equal("Ian Brown", @guest1.name)
   end
 
   def test_room_has_songs
-    assert_equal(300, @bar_1.till)
+    assert_equal("Waterfall", @song4.name)
   end
 
-  def test_pub_has_drinks
-    assert_equal(5, @bar_1.drinks.count)
-    assert_equal([@red_drink, @orange_drink, @yellow_drink, @green_drink, @blue_drink], @bar_1.drinks)
-  end
+  # def test_pub_has_drinks
+  #   assert_equal(5, @bar_1.drinks.count)
+  #   assert_equal([@red_drink, @orange_drink, @yellow_drink, @green_drink, @blue_drink], @bar_1.drinks)
+  # end
 
   # def test_pub_has_stock
   #   assert_equal(2, @bar_1.stock_value)
