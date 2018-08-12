@@ -14,6 +14,7 @@ class RoomTest < MiniTest::Test
     @song3 = Song.new("She bangs the drums")
     @song4 = Song.new("Waterfall")
     @song5 = Song.new("The Pretender")
+    @newsong = Song.new("New Song")
 
     @songs = [@song1, @song2, @song3, @song4, @song5]
 
@@ -35,18 +36,15 @@ class RoomTest < MiniTest::Test
     assert_equal("Waterfall", @song4.name)
   end
 
-  
+  def test_room_can_add_song
+    assert_equal(6, @songs.count)
+
+  end
+
+
 
 
   # , @guest4, @guest5, @guest6
 
-  # def test_pub_has_drinks
-  #   assert_equal(5, @bar_1.drinks.count)
-  #   assert_equal([@red_drink, @orange_drink, @yellow_drink, @green_drink, @blue_drink], @bar_1.drinks)
-  # end
-
-  # def test_pub_has_stock
-  #   assert_equal(2, @bar_1.stock_value)
-  # end
 
 end

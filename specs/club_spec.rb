@@ -6,12 +6,12 @@ require_relative('../room')
 
 
 class ClubTest < MiniTest::Test
-
+  
   def setup
 
-  @rooms = [@room1, @room2, @room3]
+    @rooms = [@room1, @room2, @room3]
 
-  @room2 = Room.new(@songs, @guests, 0)
+    @room2 = Room.new(@songs, @guests, 0)
 
   end
 
