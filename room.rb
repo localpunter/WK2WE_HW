@@ -3,7 +3,7 @@ class Room
   attr_accessor :songs, :guests, :tab
 
   def initialize(songs, guests, tab)
-    @songs = [] #or []?
+    @songs = songs #or []?
     @guests = guests
     @tab = tab || []
   end
@@ -19,17 +19,14 @@ class Room
 
   def add_song(song)
     # add it to the array of @songs
-    playlist = []
-    for song in @songs
-      playlist << @newsong
-    end
-    return playlist
+    @songs << song
   end
 
 
 
   def add_guest(guest)
     # add it to the array of @guests
+    @guests << guest
   end
 
   # def add_song(song)
@@ -37,7 +34,7 @@ class Room
   #   for song in @songs[]
   #     @songs << @newsong
   #   end
-  #   return @songs
+  #   return @songs[]
   # end
 
 end
